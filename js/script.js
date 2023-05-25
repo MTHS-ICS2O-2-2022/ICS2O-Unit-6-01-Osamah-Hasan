@@ -4,6 +4,17 @@
 // Created on: Feb 2023
 // This file contains the JS functions for index.html
 
+"use strict"
+
+/**
+ * Check service worker
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit6-01-Osamah-Hasan/sw.js", {
+    scope: "/ICS2O-Unit6-01-Osamah-Hasan/",
+  })
+}
+
 function myButtonClicked() {
   alert("Answer will be supported soon")
 }
